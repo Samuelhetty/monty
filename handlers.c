@@ -1,5 +1,6 @@
 #include "monty.h"
 
+
 /**
  * built_listx - builds global struct of most used variables
  *
@@ -56,7 +57,7 @@ void err_msg(int e)
 				listx->filename);
 	else if (e == 3)
 		dprintf(STDOUT_FILENO, "L%u: unknown instruction %s\n", n,
-				listx->int_line[0]);
+				listx->cmmd[0]);
 	else if (e >= 4)
 		dprintf(STDOUT_FILENO, "L%u: %s", n, errors[e]);
 

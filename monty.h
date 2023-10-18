@@ -1,6 +1,6 @@
-#ifndef MONTY_H
-#define MONTY_H
-
+#ifndef MONTY
+#define MONTY
+#define _GNU_SOURCE
 
 /* ----- c std lib headers ----- */
 
