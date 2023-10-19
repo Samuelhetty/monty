@@ -35,11 +35,11 @@ void free_all(void)
 		if (listx->int_file != NULL)
 			fclose(listx->int_file);
 
-		if (listx->cmmd != NULL)
-			free(listx->cmmd);
-
 		if (listx->int_line != NULL)
 			free(listx->int_line);
+
+		if (listx->cmmd != NULL)
+			free(listx->cmmd);
 
 		free_stack();
 		free(listx);
