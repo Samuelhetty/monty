@@ -127,6 +127,25 @@ int check_digits(char *num);
 void free_all(void);
 void free_stack(void);
 
+/* ----- cal_func ----- */
 
+void h_add(stack_t **stack, unsigned int line_number);
+void h_nop(stack_t **stack, unsigned int line_number);
+void h_sub(stack_t **stack, unsigned int line_number);
+void h_div(stack_t **stack, unsigned int line_number);
+void h_mul(stack_t **stack, unsigned int line_number);
 
+/* ---- opcodes2 ----- */
+
+void h_mod(stack_t **stack, unsigned int line_number);
+void h_pchar(stack_t **stack, unsigned int line_number);
+void h_pstr(stack_t **stack, unsigned int line_number);
+void h_rotl(stack_t **stack, unsigned int line_number);
+void h_rotr(stack_t **stack, unsigned int line_number);
+
+/* ---- Stack_queue ---- */
+
+void h_stack(stack_t **stack, unsigned int line_number);
+void h_queue(stack_t **stack, unsigned int line_number);
+int _putchar(char c);
 #endif

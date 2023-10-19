@@ -13,6 +13,10 @@ void (*fetch_opcode(void))(stack_t **stack, unsigned int line_number)
 	static instruction_t instructions[] = {
 		{"push", h_push}, {"pall", h_pall},
 		{"pint", h_pint}, {"pop", h_pop}, {"swap", h_swap},
+		{"add", h_add}, {"nop", h_nop}, {"sub", h_sub},
+		{"div", h_div}, {"mul", h_mul}, {"mod", h_mod},
+		{"pchar", h_pchar}, {"pstr", h_pstr}, {"rotl", h_rotl},
+		{"rotr", h_rotr}, {"stack", h_stack}, {"queue", h_queue},
 		{NULL, NULL}
 	};
 
