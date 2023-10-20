@@ -51,15 +51,15 @@ void err_msg(int e)
 		n = listx->line_count;
 
 	if (e <= 1)
-		dprintf(STDOUT_FILENO, "%s", errors[e]);
+		dprintf(2, "%s", errors[e]);
 	else if (e == 2)
-		dprintf(STDOUT_FILENO, "Error: Can't open file %s\n",
+		dprintf(2, "Error: Can't open file %s\n",
 				listx->filename);
 	else if (e == 3)
-		dprintf(STDOUT_FILENO, "L%u: unknown instruction %s\n", n,
+		dprintf(2, "L%u: unknown instruction %s\n", n,
 				listx->cmmd[0]);
 	else if (e >= 4)
-		dprintf(STDOUT_FILENO, "L%u: %s", n, errors[e]);
+		dprintf(2, "L%u: %s", n, errors[e]);
 
 	free_all();
 
